@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="606dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="MyCall"
+            android:textColor="@color/teal_200"
+            android:textSize="40dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="131dp" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:onClick="Call"
+            android:text="Call" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
